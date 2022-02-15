@@ -1,0 +1,17 @@
+#cus{
+    margin-top: 100px;
+    margin-left: 500px;
+    border:solid 2px;
+    background-color: antiquewhite;
+    width:500px;
+    height:400px;
+}
+.row{
+    margin-left: 50px;;
+}
+#fc{
+    margin-left: 50px;;
+}
+h3{
+    margin-left: 115px;
+}

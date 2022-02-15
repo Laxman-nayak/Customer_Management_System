@@ -1,0 +1,36 @@
+<div class="container mt-5" style="margin-left:500px;" >
+    <h2><i>Customer Details</i></h2>
+    
+    <div class="card" style="width:400px;height:550px;">
+      <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar3.png" alt="Card image" style="width:100%;height: 300px;">
+      <div class="card-body">
+        <h4 class="card-title">First Name:&nbsp;&nbsp; {{resData.firstName}}</h4>
+        <h4 class="card-title">Last Name:&nbsp;&nbsp;{{resData.lastName}}</h4>
+        <p class="card-text">Country:&nbsp;&nbsp;{{resData.country}}</p>
+        <p class="card-text" >DataCreated:&nbsp;&nbsp;{{resData.createDate}}</p>
+        <a href="#" class="btn btn-primary" style="float:right;" (click)="backtoView()">BackToView</a>
+      </div>
+    </div>
+    
+
+    <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">New Friend</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="FirstName">Firstname</label>
+              <div class="input-group">
+                <input id="FirstName" class="form-control" >
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+        </div>
+      </ng-template>

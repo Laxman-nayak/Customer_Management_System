@@ -1,0 +1,62 @@
+<div id="cus">
+  <h3><i>Add your Details</i></h3>
+<div id="fc" classs="fluid-container">
+    
+    <form  [formGroup]="AddCustomer" action="/action_page.php" (ngSubmit)="onSubmit()" novalidate>
+     
+        <div class="row">
+          <div class="col-8">
+            <p>
+              <label for="FirstName"> FirstName </label>
+              <input type="text" id="FirstName" name="FirstName" class="form-control" formControlName="FirstName">
+              
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8" id="left">
+            <p>
+              <label for="LastName">LastName</label>
+              <input type="text" id="LastName" name="LastName" class="form-control" formControlName="LastName">
+              
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p>
+              <label for="Country">Country </label>
+              <input type="text" id="Country" name="Country" class="form-control" formControlName="Country">
+              
+            </p>
+           </div>
+        </div>
+        <div class="row">
+           <div class="col-8" id="left">
+            <p>
+              <label for="CreateDate">Create Date </label>
+              <input type="date" id="CreateDate" name="CreateDate" class="form-control" formControlName="CreateDate">
+              
+            </p>
+
+
+           </div>
+        </div>
+    
+        
+    
+         
+    
+         
+    <p style="margin-left: 80px;">
+      <button type="submit" style="width:200px;" class="btn btn-primary ms-1"><i><b>Submit</b></i></button>
+    </p>
+        
+    
+      </form>
+
+    
+    </div>
+  </div>
+    {{cus|json}}
+     

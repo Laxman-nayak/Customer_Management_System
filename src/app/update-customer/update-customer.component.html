@@ -1,0 +1,51 @@
+
+
+<div id="cus">
+  <div id="fc">
+    <h3>update your current details</h3>
+    <form  [formGroup]="AddCustomer"  (ngSubmit)="onSubmit()"  novalidate>
+     
+        <div class="row">
+          <div class="col-10">
+            <p>
+              <label for="FirstName"><strong>FirstName</strong> </label>
+              <input type="text" id="FirstName" name="FirstName" class="form-control" formControlName="FirstName">
+              
+            </p>
+          </div>
+       </div>
+       <diV class="row">
+          <div class="col-10" id="left">
+            <p>
+              <label for="LastName"><strong>LastName</strong></label>
+              <input type="text" id="LastName" name="LastName" class="form-control" formControlName="LastName">
+              
+            </p>
+          </div>
+        </diV>
+        
+    
+         <div class="row">
+           <div class="col-10">
+            <p>
+              <label for="Country"><strong>Country</strong> </label>
+              <input type="text" id="Country" name="Country" class="form-control" formControlName="Country">
+              
+            </p>
+           </div>
+           
+         </div>
+    
+         
+    <p style="margin-left: 150px;">
+      <button type="submit" style="width:150px;">Submit</button>
+    </p>
+        
+    
+      </form>
+    </div>
+    
+    </div>
+    
+   
+     
